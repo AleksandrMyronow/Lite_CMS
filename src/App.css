@@ -1,0 +1,32 @@
+
+.navbar {
+  background-color: #e7e7e7;
+  color: darkcyan;
+  font-weight: 700;
+  padding-left: 3%;
+}
+
+h3 {
+  padding-left: 10%;
+}
+
+.container {
+  list-style-type: none
+}
+
+.li {
+  margin: 3%;
+  padding: 1%;
+  border: 1px solid darkcyan;
+  background-color: darkcyan;
+  text-decoration: none;
+  link: white;
+  border-radius: 3%;
+  text-align: center;
+}
+
+.li:hover {
+  background-color: #e7e9ee;
+  link: darkcyan
+
+}
