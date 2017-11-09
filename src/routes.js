@@ -12,12 +12,13 @@ const errRoute = () => {
 export default {
     path: '/',
     component: App,
-    childRoutes: TABS.map((tab, index) => ({
-        path: `/${tab.id}`,
-        getComponent(location, cb) {
-            import(`./${tab.path}`)
-                .then(loadRoute(cb))
-                .catch(errRoute)
-        }
-    }))
+    childRoutes:
+        TABS.map((tab, index) => ({
+            path: `/${tab.id}`,
+            getComponent(location, cb) {
+                import(`./${tab.path}`)
+                    .then(loadRoute(cb))
+                    .catch(errRoute)
+            }
+        }))
 }
