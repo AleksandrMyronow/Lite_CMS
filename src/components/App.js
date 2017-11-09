@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 
 const TABS = require ('../assets/tabs.json');
 const sortTABS = TABS.sort(function sortById(tabA, tabB) {
-    return tabA.id > tabB.id;
+    return tabA.order > tabB.order;
 });
 
 const App = ({children}) =>
